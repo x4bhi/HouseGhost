@@ -1,6 +1,8 @@
 ﻿(function () {
   "use strict";
 
+  let isProtectionEnabled = true;
+
   const MODAL_CLASSES = [
     "layout-item_styles__zc08zp30 default-ltr-cache-7vbe6a ermvlvv0",
     "default-ltr-cache-1sfbp89 e1qcljkj0",
@@ -67,6 +69,8 @@
 
   // Purge restriction modals
   function purgeModals() {
+    if (!isProtectionEnabled) return;
+
     let removedAny = false;
     MODAL_CLASSES.forEach((cls) => {
       try {
@@ -107,13 +111,27 @@
     }
   }
 
-  injectConcealmentCSS();
-  injectFilterScript();
-  purgeModals();
+  // Check initial state
+  if (typeof chrome !== "undefined" && chrome.storage?.local) {
+    chrome.storage.local.get({ houseghost_enabled: true }, (data) => {
+      isProtectionEnabled = data.houseghost_enabled !== false;
+      if (isProtectionEnabled) {
+        injectConcealmentCSS();
+        injectFilterScript();
+        purgeModals();
+      }
+    });
+  } else {
+    injectConcealmentCSS();
+    injectFilterScript();
+    purgeModals();
+  }
 
   // Observer
   const observer = new MutationObserver(() => {
-    purgeModals();
+    if (isProtectionEnabled) {
+      purgeModals();
+    }
   });
 
   if (document.readyState === "loading") {
@@ -136,13 +154,20 @@
     purgeModals();
   }
 
-  setInterval(purgeModals, 500);
+  setInterval(() => {
+    if (isProtectionEnabled) {
+      purgeModals();
+    }
+  }, 500);
 
-  // Message listener
+  // Message listener for live state toggle
   if (typeof chrome !== "undefined" && chrome.runtime?.onMessage) {
     chrome.runtime.onMessage.addListener((msg) => {
-      if (msg.action === "PURGE") {
-        purgeModals();
+      if (msg.action === "STATE_CHANGE") {
+        isProtectionEnabled = msg.enabled;
+        if (isProtectionEnabled) {
+          purgeModals();
+        }
       }
     });
   }
