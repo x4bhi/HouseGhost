@@ -1,0 +1,225 @@
+{
+  "extensionName": {
+    "message": "HouseGhost",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Watch Netflix without household limits",
+    "description": "Extension description"
+  },
+  "header": {
+    "message": "HouseGhost",
+    "description": "Header title"
+  },
+  "controllerLabel": {
+    "message": "Controller",
+    "description": "Toggle label for the controller"
+  },
+  "statusEnabled": {
+    "message": "Enable",
+    "description": "Status text when toggle is on"
+  },
+  "statusDisabled": {
+    "message": "Disable",
+    "description": "Status text when toggle is off"
+  },
+  "onboardingTitle": {
+    "message": "Choose your preferred bypass method to enjoy uninterrupted streaming on Netflix.",
+    "description": "Onboarding subtitle"
+  },
+  "recommended": {
+    "message": " Recommended",
+    "description": "Badge text"
+  },
+  "cssBlockTitle": {
+    "message": "Smart Stealth Mode",
+    "description": "CSS block card title"
+  },
+  "cssBlockDesc": {
+    "message": "Instantly silences and bypasses restriction screens inside your browser. Keeps your stream 100% stable, smooth, and legally compliant.",
+    "description": "CSS block card description"
+  },
+  "legalSafeBadge": {
+    "message": "Maximum Stability & Safety",
+    "description": "Legal status safe badge"
+  },
+  "legalSafeText": {
+    "message": "Only refines visual presentation without tampering with network streams. Safest and most reliable across all browsers.",
+    "description": "Legal status safe description"
+  },
+  "cssPro1": {
+    "message": "Custom smooth playback controller",
+    "description": "CSS block pro 1"
+  },
+  "cssPro2": {
+    "message": "Full playback, dual subtitles & episode navigator",
+    "description": "CSS block pro 2"
+  },
+  "tipsIncluded": {
+    "message": "100% reliable across Chrome, Thorium & Edge",
+    "description": "Stability label"
+  },
+  "apiBlockTitle": {
+    "message": "Direct Network Filter",
+    "description": "API block card title"
+  },
+  "apiBlockDesc": {
+    "message": "Filters restriction requests directly at the network layer before they reach Netflix servers. Retains Netflix's standard default player.",
+    "description": "API block card description"
+  },
+  "legalWarnBadge": {
+    "message": "Advanced Network Filter",
+    "description": "Legal status warning badge"
+  },
+  "legalWarnText": {
+    "message": "Intercepts background GraphQL queries using declarative filters so restriction screens never trigger.",
+    "description": "Legal status warning description"
+  },
+  "apiPro1": {
+    "message": "Restriction modal never loads",
+    "description": "API block pro 1"
+  },
+  "apiPro2": {
+    "message": "Uses Netflix standard video player",
+    "description": "API block pro 2"
+  },
+  "confirmCssBtn": {
+    "message": "Activate Smart Stealth Mode",
+    "description": "Confirm button text for CSS mode"
+  },
+  "confirmApiBtn": {
+    "message": "Activate Direct Network Filter",
+    "description": "Confirm button text for API mode"
+  },
+  "confirmNote": {
+    "message": "You can easily switch modes anytime in the extension popup.",
+    "description": "Confirmation note"
+  },
+  "blockingModeSection": {
+    "message": "Mode Selection",
+    "description": "Mode section title"
+  },
+  "cssModeDescPopup": {
+    "message": "Smart Stealth · Custom Player",
+    "description": "CSS mode short description for popup"
+  },
+  "apiModeDescPopup": {
+    "message": "Network Filter · Standard Player",
+    "description": "API mode short description for popup"
+  },
+  "nowPlaying": {
+    "message": "Playing",
+    "description": "Badge shown on the currently playing episode"
+  },
+  "season": {
+    "message": "Season $NUM$",
+    "description": "Fallback label for a season without a title",
+    "placeholders": {
+      "num": {
+        "content": "$1"
+      }
+    }
+  },
+  "closeTooltip": {
+    "message": "Close",
+    "description": "Title of the button that closes the episodes list"
+  },
+  "backTooltip": {
+    "message": "Back",
+    "description": "Title of the controller back button"
+  },
+  "playTooltip": {
+    "message": "Play (Space)",
+    "description": "Title of the play button"
+  },
+  "pauseTooltip": {
+    "message": "Pause (Space)",
+    "description": "Title of the pause button"
+  },
+  "rewindTooltip": {
+    "message": "Rewind 10 seconds (Left)",
+    "description": "Title of the rewind button"
+  },
+  "forwardTooltip": {
+    "message": "Forward 10 seconds (Right)",
+    "description": "Title of the forward button"
+  },
+  "volumeTooltip": {
+    "message": "Volume (M to mute)",
+    "description": "Title of the volume icon"
+  },
+  "nextEpisodeTooltip": {
+    "message": "Next episode (N)",
+    "description": "Title of the next-episode button"
+  },
+  "episodesTooltip": {
+    "message": "Episodes and seasons",
+    "description": "Title of the episodes list button"
+  },
+  "subtitlesTooltip": {
+    "message": "Audio and subtitles",
+    "description": "Title of the audio and subtitles button"
+  },
+  "speedTooltip": {
+    "message": "Playback speed: $SPEED$x",
+    "description": "Title of the playback speed button",
+    "placeholders": {
+      "speed": {
+        "content": "$1"
+      }
+    }
+  },
+  "speedMessage": {
+    "message": "Speed: $SPEED$x",
+    "description": "Message shown when the playback speed changes",
+    "placeholders": {
+      "speed": {
+        "content": "$1"
+      }
+    }
+  },
+  "autoplayTooltipOn": {
+    "message": "Autoplay: ON",
+    "description": "Title of the autoplay button when enabled"
+  },
+  "autoplayTooltipOff": {
+    "message": "Autoplay: OFF",
+    "description": "Title of the autoplay button when disabled"
+  },
+  "autoplayMessageOn": {
+    "message": "Autoplay enabled",
+    "description": "Message shown when autoplay is enabled"
+  },
+  "autoplayMessageOff": {
+    "message": "Autoplay disabled",
+    "description": "Message shown when autoplay is disabled"
+  },
+  "fullscreenTooltip": {
+    "message": "Fullscreen (F)",
+    "description": "Title of the fullscreen button"
+  },
+  "skipIntro": {
+    "message": "Skip intro",
+    "description": "Text of the floating skip-intro button"
+  },
+  "nextEpisodeLabel": {
+    "message": "Next episode",
+    "description": "Text of the floating skip-outro/next-episode button"
+  },
+  "introSkippedMessage": {
+    "message": "Intro skipped",
+    "description": "Message shown after skipping the intro"
+  },
+  "nextEpisodePlayingMessage": {
+    "message": "Playing next episode...",
+    "description": "Message shown just before autoplaying the next episode"
+  },
+  "rewindMessage": {
+    "message": "-10 sec",
+    "description": "Message shown when rewinding 10 seconds"
+  },
+  "forwardMessage": {
+    "message": "+10 sec",
+    "description": "Message shown when fast-forwarding 10 seconds"
+  }
+}

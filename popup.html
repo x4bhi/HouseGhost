@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HouseGhost</title>
+  <script type="module" crossorigin src="/chunks/popup.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/popup.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- Header -->
+  <header class="popup-header">
+    <div class="header-brand">
+      <img src="/icons/HouseGhost-32.png" alt="HouseGhost" class="header-logo">
+      <div class="header-titles">
+        <h1 class="header-title">HouseGhost</h1>
+        <span class="header-subtitle">Netflix Household Bypass</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main 3D Control Card -->
+  <div class="control-card-3d" id="control-card">
+    <div class="control-card-left">
+      <div class="control-icon-pod" id="shield-icon-pod">
+        <svg class="shield-svg" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 22C12 22 20 18 20 11V5L12 2L4 5V11C4 18 12 22 12 22Z" fill="url(#shieldGrad)" stroke="rgba(192, 132, 252, 0.6)" stroke-width="1.5"/>
+          <path d="M9 12L11 14L15 10" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="shieldGrad" x1="12" y1="2" x2="12" y2="22" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#c084fc"/>
+              <stop offset="100%" stop-color="#7e22ce"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="control-text-block">
+        <span class="control-card-label">Bypass Engine</span>
+        <div class="control-status-row">
+          <span class="status-indicator-dot" id="status-dot"></span>
+          <span class="status-indicator-label" id="status-label">Protection Active</span>
+        </div>
+      </div>
+    </div>
+    <!-- Toggle Switch -->
+    <label class="toggle-switch" for="protection-toggle" title="Toggle HouseGhost Protection">
+      <input type="checkbox" id="protection-toggle" checked>
+      <span class="toggle-slider"></span>
+    </label>
+  </div>
+
+  <!-- Ultra HD 4K Mode Control Card -->
+  <div class="control-card-3d paused" id="4k-control-card">
+    <div class="control-card-left">
+      <div class="control-icon-pod" id="4k-icon-pod">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="14" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="18" x2="12" y2="21"></line>
+          <polyline points="9 8 7 12 10 12"></polyline>
+          <line x1="10" y1="8" x2="10" y2="14"></line>
+          <line x1="14" y1="8" x2="14" y2="14"></line>
+          <polyline points="17 8 14 11 17 14"></polyline>
+        </svg>
+      </div>
+      <div class="control-text-block">
+        <span class="control-card-label">Ultra HD 4K</span>
+        <div class="control-status-row">
+          <span class="status-indicator-label browser-badge">Microsoft Edge Only</span>
+        </div>
+      </div>
+    </div>
+    <!-- Toggle Switch for 4K -->
+    <label class="toggle-switch" for="force4k-toggle" title="Toggle Ultra HD 4K Mode">
+      <input type="checkbox" id="force4k-toggle">
+      <span class="toggle-slider"></span>
+    </label>
+  </div>
+
+  <!-- Live Stats HUD -->
+  <div class="live-stats-hud" id="live-stats-hud" style="display: none;">
+    <div class="stats-grid" style="justify-content: center;">
+      <div class="stat-item">
+        <span class="stat-label">Live Stream Quality</span>
+        <span class="stat-value" id="stat-res" style="font-size: 16px; margin-top: 4px;">--</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Row -->
+  <a href="https://www.netflix.com" target="_blank" class="netflix-launch-btn" id="launch-btn" rel="noreferrer">
+    <span>Open Netflix</span>
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+      <polyline points="15 3 21 3 21 9"/>
+      <line x1="10" y1="14" x2="21" y2="3"/>
+    </svg>
+  </a>
+
+  <!-- Footer -->
+  <footer class="popup-footer">
+    <span>Crafted by <strong class="author-tag">x4abhi</strong></span>
+    <span>&bull;</span>
+    <span id="version-text">v1.0.0</span>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+﻿{
+    "default_locale": "en",
+    "description": "Watch Netflix without household limits",
+    "manifest_version": 3,
+    "version": "1.0.0",
+    "permissions": [
+        "storage",
+        "tabs",
+        "declarativeNetRequest",
+        "declarativeNetRequestWithHostAccess"
+    ],
+    "host_permissions": [
+        "*://*.netflix.com/*",
+        "*://web.prod.cloud.netflix.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": false,
+                "path": "4k-rules.json"
+            }
+        ]
+    },
+    "name": "HouseGhost",
+    "action": {
+        "default_icon": {
+            "48": "icons/HouseGhost-48.png",
+            "128": "icons/HouseGhost-128.png",
+            "256": "icons/HouseGhost-256.png",
+            "512": "icons/HouseGhost-512.png",
+            "32": "icons/HouseGhost-32.png",
+            "16": "icons/HouseGhost-16.png",
+            "64": "icons/HouseGhost-64.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "HouseGhost | Watch Netflix without household limits"
+    },
+    "icons": {
+        "48": "icons/HouseGhost-48.png",
+        "128": "icons/HouseGhost-128.png",
+        "256": "icons/HouseGhost-256.png",
+        "512": "icons/HouseGhost-512.png",
+        "32": "icons/HouseGhost-32.png",
+        "16": "icons/HouseGhost-16.png",
+        "64": "icons/HouseGhost-64.png"
+    },
+    "web_accessible_resources": [
+        {
+            "matches": [
+                "*://*.netflix.com/*"
+            ],
+            "resources": [
+                "ghost-filter.js"
+            ]
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.netflix.com/*"
+            ],
+            "js": [
+                "content-scripts/4k-guard.js"
+            ],
+            "run_at": "document_start",
+            "world": "MAIN",
+            "all_frames": true
+        },
+        {
+            "matches": [
+                "*://*.netflix.com/*"
+            ],
+            "css": [
+                "content-scripts/content.css"
+            ],
+            "js": [
+                "content-scripts/content.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": true
+        }
+    ]
+}
