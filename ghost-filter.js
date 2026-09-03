@@ -1,4 +1,8 @@
-﻿var netflixApiblocker = (function () {
+﻿/**
+ * HouseGhost Core Engine - GraphQL Interceptor
+ * Made by x4bhi
+ */
+var netflixApiblocker = (function () {
   "use strict";
 
   function init(targetFn) {

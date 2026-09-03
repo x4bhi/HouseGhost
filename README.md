@@ -70,7 +70,7 @@
 1. **Clone or Download the Repository**
 
 ```bash
-git clone https://github.com/x4abhi/HouseGhost.git
+git clone https://github.com/x4bhi/HouseGhost.git
 ```
 
 *(Or download the ZIP from GitHub and extract it to a folder).*

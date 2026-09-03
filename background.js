@@ -1,3 +1,7 @@
+﻿/**
+ * HouseGhost Core Engine - Background Service Worker
+ * Made by x4bhi
+ */
 (function () {
   "use strict";
 

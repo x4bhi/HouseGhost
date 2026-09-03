@@ -1,3 +1,7 @@
+﻿/**
+ * HouseGhost Core Engine - Content Guardian & Modal Purger
+ * Made by x4bhi
+ */
 (function () {
   "use strict";
 

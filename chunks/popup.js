@@ -1,3 +1,7 @@
+﻿/**
+ * HouseGhost Core Engine - Popup Controller
+ * Made by x4bhi
+ */
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("protection-toggle");
   const card = document.getElementById("control-card");

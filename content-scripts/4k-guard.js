@@ -1,4 +1,7 @@
-﻿// HouseGhost - 4K Cinema Guard (MAIN World)
+﻿/**
+ * HouseGhost Core Engine - 4K Cinema Guard (MAIN World)
+ * Made by x4bhi
+ */
 (function() {
   'use strict';
   
