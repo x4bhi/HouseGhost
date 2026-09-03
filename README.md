@@ -138,7 +138,7 @@ Distributed under the **MIT License**. Open source and free for personal and edu
 
 ```text
 MIT License
-Copyright (c) 2026 x4abhi
+Copyright (c) 2026 x4bhi
 Permission is hereby granted, free of charge, to any person obtaining a copy...
 ```
 
@@ -153,6 +153,6 @@ See the [`LICENSE`](LICENSE) file for full license terms and conditions.
 
   <br>
 
-  <sub>Crafted with care by <strong>x4abhi</strong></sub>
+  <sub>Crafted with care by <strong>x4bhi</strong></sub>
 
 </div>
