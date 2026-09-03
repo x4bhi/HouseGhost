@@ -2,7 +2,8 @@
     "default_locale": "en",
     "description": "Watch Netflix without household limits",
     "manifest_version": 3,
-    "version": "1.0.0",`n    "author": "x4bhi",
+    "version": "1.0.0",
+    "author": "x4bhi",
     "permissions": [
         "storage",
         "tabs",
